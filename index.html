@@ -1,1 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="JudgesPro — Universal Judging & Evaluation System">
+
+  <meta name="theme-color" content="#8e2447">
+
+  <title>JudgesPro — Universal Judging & Evaluation System</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f8edf2 0%,
+          #ffffff 48%,
+          #f3e6ec 100%
+        );
+
+      color: #242424;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 22px 16px 45px;
+    }
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #8e2447,
+          #b64d70,
+          #8e2447
+        );
+
+      color: white;
+      border-radius: 30px;
+      padding: 30px 22px 28px;
+      text-align: center;
+
+      box-shadow:
+        0 15px 40px rgba(80, 20, 45, 0.20);
+    }
+
+    .logo {
+      width: 108px;
+      height: 108px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 12px;
+      border-radius: 24px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 31px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      font-size: 15px;
+      opacity: 0.95;
+      line-height: 1.5;
+    }
+
+    .version-card {
+      background: white;
+      margin-top: 18px;
+      padding: 24px 20px;
+      border-radius: 24px;
+
+      text-align: center;
+
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .latest {
+      display: inline-block;
+      padding: 6px 13px;
+      border-radius: 50px;
+
+      background: #f5e2e9;
+      color: #8e2447;
+
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    #version {
+      margin: 12px 0 4px;
+      font-size: 27px;
+      font-weight: 800;
+      color: #8e2447;
+    }
+
+    #releaseDate {
+      margin: 0 0 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .download-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 56px;
+      width: 100%;
+
+      padding: 0 24px;
+
+      background: #8e2447;
+      color: white;
+
+      border-radius: 18px;
+
+      text-decoration: none;
+
+      font-size: 17px;
+      font-weight: 800;
+
+      box-shadow:
+        0 8px 20px rgba(142, 36, 71, 0.28);
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .download-button:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 12px 25px rgba(142, 36, 71, 0.35);
+    }
+
+    .download-button:active {
+      transform: translateY(0);
+    }
+
+    .download-note {
+      margin: 13px 0 0;
+      color: #777;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .section {
+      background: white;
+      margin-top: 18px;
+      padding: 23px 21px;
+      border-radius: 24px;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    .section h2 {
+      margin: 0 0 14px;
+      color: #8e2447;
+      font-size: 19px;
+    }
+
+    .section p {
+      margin: 8px 0;
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .feature {
+      background: #faf4f7;
+      border-radius: 15px;
+      padding: 13px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .feature strong {
+      color: #8e2447;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .steps {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .steps li {
+      margin-bottom: 11px;
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .support {
+      text-align: center;
+    }
+
+    .support a {
+      color: #8e2447;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px 10px 5px;
+      color: #777;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .status {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 12px 10px 35px;
+      }
+
+      .hero {
+        border-radius: 24px;
+        padding: 26px 17px;
+      }
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <section class="hero">
+
+      <!-- Optional: add your JudgesPro logo later -->
+      <!--
+      <img
+        class="logo"
+        src="judgespro_logo.png"
+        alt="JudgesPro Logo">
+      -->
+
+      <h1>JUDGESPRO</h1>
+
+      <p>
+        Universal Judging &amp; Evaluation System
+      </p>
+
+    </section>
+
+
+    <section class="version-card">
+
+      <span class="latest">
+        Latest Version
+      </span>
+
+      <div id="version">
+        Loading...
+      </div>
+
+      <div id="releaseDate">
+        Checking latest release...
+      </div>
+
+      <a
+        id="downloadButton"
+        class="download-button"
+        href="#"
+        target="_blank"
+        rel="noopener">
+        Download JudgesPro APK
+      </a>
+
+      <div class="download-note">
+        Android application • Free download
+      </div>
+
+      <div
+        id="status"
+        class="status">
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <h2>About JudgesPro</h2>
+
+      <p>
+        JudgesPro is a universal judging and evaluation system
+        designed to simplify score entry, judging, result tabulation
+        and result management.
+      </p>
+
+      <div class="features">
+
+        <div class="feature">
+          <strong>Admin</strong>
+          Manage Items, settings, judges and results.
+        </div>
+
+        <div class="feature">
+          <strong>Judge</strong>
+          Enter and manage participant scores.
+        </div>
+
+        <div class="feature">
+          <strong>Results</strong>
+          Import, tabulate and review results.
+        </div>
+
+        <div class="feature">
+          <strong>Export</strong>
+          JSON and PDF based data exchange.
+        </div>
+
+        <div class="feature">
+          <strong>Media</strong>
+          Photo and video support for judging.
+        </div>
+
+        <div class="feature">
+          <strong>Offline Friendly</strong>
+          Designed for practical event use.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <h2>How to Install</h2>
+
+      <ol class="steps">
+
+        <li>
+          Tap <strong>Download JudgesPro APK</strong>.
+        </li>
+
+        <li>
+          Open the downloaded APK file.
+        </li>
+
+        <li>
+          If Android asks for permission to install from
+          that source, allow it.
+        </li>
+
+        <li>
+          Install JudgesPro.
+        </li>
+
+        <li>
+          Open JudgesPro and follow the User Manual.
+        </li>
+
+      </ol>
+
+    </section>
+
+
+    <section class="section">
+
+      <h2>Updating JudgesPro</h2>
+
+      <p>
+        When a new version is released, this page will automatically
+        show the latest version.
+      </p>
+
+      <p>
+        Existing users can return to this page and download the
+        newest APK.
+      </p>
+
+      <p>
+        An in-app update notification can also be added to JudgesPro
+        so that the application can notify users when a new version
+        is available.
+      </p>
+
+    </section>
+
+
+    <section class="section support">
+
+      <h2>Support</h2>
+
+      <p>
+        For JudgesPro support:
+      </p>
+
+      <p>
+        <a href="mailto:surendranaduthila@gmail.com">
+          surendranaduthila@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://chat.whatsapp.com/EblHyPwSHsxCNCa43iqERs?s=sh&p=a&mlu=4&ilr=4"
+          target="_blank"
+          rel="noopener">
+          JudgesPro Users WhatsApp Group
+        </a>
+      </p>
+
+    </section>
+
+
+    <footer class="footer">
+
+      JUDGESPRO — UNIVERSAL DESIGN<br>
+
+      Universal Judging &amp; Evaluation System
+
+      <br><br>
+
+      &copy; JudgesPro
+
+    </footer>
+
+  </main>
+
+
+  <script>
+
+    /*
+     * version.json contains the current release information.
+     */
+
+    fetch("version.json?cache=" + Date.now())
+
+      .then(response => {
+
+        if (!response.ok) {
+          throw new Error("Unable to load version information.");
+        }
+
+        return response.json();
+
+      })
+
+      .then(data => {
+
+        document.getElementById("version").textContent =
+          "Version " + data.version;
+
+        if (data.releaseDate) {
+
+          document.getElementById("releaseDate").textContent =
+            "Released " + data.releaseDate;
+
+        } else {
+
+          document.getElementById("releaseDate").textContent =
+            "Latest stable release";
+
+        }
+
+        const button =
+          document.getElementById("downloadButton");
+
+        button.href = data.downloadUrl;
+
+        document.getElementById("status").textContent =
+          data.message ||
+          "Ready to download.";
+
+      })
+
+      .catch(error => {
+
+        document.getElementById("version").textContent =
+          "JudgesPro";
+
+        document.getElementById("releaseDate").textContent =
+          "Latest release information unavailable.";
+
+        document.getElementById("status").textContent =
+          "Please try again later.";
+
+        console.error(error);
+
+      });
+
+  </script>
+
+</body>
+</html>
