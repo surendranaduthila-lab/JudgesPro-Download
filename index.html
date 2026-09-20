@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>JudgesPro — Universal Judging & Evaluation System</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="description"
-        content="Official download page for JudgesPro — Universal Judging & Evaluation System.">
+  <title>JudgesPro — Universal Judging &amp; Evaluation System</title>
+
+  <meta
+    name="description"
+    content="Official download page for JudgesPro — Universal Judging & Evaluation System."
+  >
 
   <meta name="theme-color" content="#1565c0">
 
@@ -38,7 +44,7 @@
       color: inherit;
     }
 
-    /* ---------- Header ---------- */
+    /* ================= HEADER ================= */
 
     .topbar {
       background: #ffffff;
@@ -73,7 +79,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: #ffffff;
       font-size: 21px;
       font-weight: 800;
       box-shadow: 0 4px 12px rgba(21, 101, 192, 0.20);
@@ -110,11 +116,16 @@
       color: #1565c0;
     }
 
-    /* ---------- Hero ---------- */
+    /* ================= HERO ================= */
 
     .hero {
       background:
-        linear-gradient(135deg, #eaf4ff 0%, #ffffff 55%, #f1f7ff 100%);
+        linear-gradient(
+          135deg,
+          #eaf4ff 0%,
+          #ffffff 55%,
+          #f1f7ff 100%
+        );
       border-bottom: 1px solid #e1eaf3;
     }
 
@@ -194,14 +205,16 @@
       text-decoration: none;
       font-size: 16px;
       font-weight: 700;
-      box-shadow: 0 7px 18px rgba(21, 101, 192, 0.25);
+      box-shadow:
+        0 7px 18px rgba(21, 101, 192, 0.25);
       transition: 0.2s ease;
     }
 
     .download-button:hover {
       background: #0d47a1;
       transform: translateY(-1px);
-      box-shadow: 0 9px 22px rgba(21, 101, 192, 0.30);
+      box-shadow:
+        0 9px 22px rgba(21, 101, 192, 0.30);
     }
 
     .secondary-button {
@@ -223,14 +236,15 @@
       background: #f3f8fd;
     }
 
-    /* ---------- Download Card ---------- */
+    /* ================= DOWNLOAD CARD ================= */
 
     .download-card {
       background: #ffffff;
       border: 1px solid #dce7f2;
       border-radius: 18px;
       padding: 30px;
-      box-shadow: 0 12px 35px rgba(38, 80, 120, 0.10);
+      box-shadow:
+        0 12px 35px rgba(38, 80, 120, 0.10);
     }
 
     .download-card-icon {
@@ -259,7 +273,7 @@
     }
 
     .version-box {
-      margin: 22px 0;
+      margin: 22px 0 15px;
       padding: 15px;
       border-radius: 10px;
       background: #f5f9fd;
@@ -281,7 +295,38 @@
       width: 100%;
     }
 
-    /* ---------- Main ---------- */
+    /* ================= DOWNLOAD COUNTER ================= */
+
+    .download-count {
+      margin-top: 15px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #f8fbfe;
+      border: 1px solid #e1eaf2;
+      text-align: center;
+      color: #58718a;
+      font-size: 14px;
+    }
+
+    .download-count-number {
+      color: #1565c0;
+      font-size: 22px;
+      font-weight: 800;
+      margin-right: 5px;
+    }
+
+    .download-count-label {
+      font-weight: 600;
+    }
+
+    .download-count-status {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: #8a9bab;
+    }
+
+    /* ================= MAIN ================= */
 
     main {
       max-width: 1100px;
@@ -310,7 +355,7 @@
       margin: 0;
     }
 
-    /* ---------- Features ---------- */
+    /* ================= FEATURES ================= */
 
     .features {
       display: grid;
@@ -328,7 +373,8 @@
 
     .feature:hover {
       border-color: #b8d3ed;
-      box-shadow: 0 8px 22px rgba(40, 90, 135, 0.08);
+      box-shadow:
+        0 8px 22px rgba(40, 90, 135, 0.08);
       transform: translateY(-2px);
     }
 
@@ -357,7 +403,7 @@
       margin: 0;
     }
 
-    /* ---------- Information Cards ---------- */
+    /* ================= INFORMATION ================= */
 
     .info-grid {
       display: grid;
@@ -407,7 +453,7 @@
       overflow-x: auto;
     }
 
-    /* ---------- Trust / Security ---------- */
+    /* ================= TRUST ================= */
 
     .trust-box {
       background: #eef7ff;
@@ -422,6 +468,7 @@
     .trust-icon {
       font-size: 28px;
       flex-shrink: 0;
+      color: #1565c0;
     }
 
     .trust-box h3 {
@@ -435,7 +482,7 @@
       font-size: 14px;
     }
 
-    /* ---------- Support ---------- */
+    /* ================= SUPPORT ================= */
 
     .support {
       text-align: center;
@@ -469,7 +516,7 @@
       margin-top: 20px;
     }
 
-    /* ---------- Footer ---------- */
+    /* ================= FOOTER ================= */
 
     footer {
       background: #123b67;
@@ -488,7 +535,7 @@
       text-decoration: none;
     }
 
-    /* ---------- Responsive ---------- */
+    /* ================= RESPONSIVE ================= */
 
     @media (max-width: 850px) {
 
@@ -591,15 +638,22 @@
   <!-- ================= HEADER ================= -->
 
   <header class="topbar">
+
     <div class="topbar-inner">
 
       <a class="brand" href="#">
-        <div class="brand-logo">JP</div>
+
+        <div class="brand-logo">
+          JP
+        </div>
 
         <div class="brand-text">
           <strong>JudgesPro</strong>
-          <span>Universal Judging &amp; Evaluation System</span>
+          <span>
+            Universal Judging &amp; Evaluation System
+          </span>
         </div>
+
       </a>
 
       <nav class="nav">
@@ -609,6 +663,7 @@
       </nav>
 
     </div>
+
   </header>
 
 
@@ -636,8 +691,8 @@
         <p class="hero-description">
           A digital judging and evaluation system for competitions,
           exhibitions, performances, presentations and other events.
-          Manage items, judges, participants, scores and results in one
-          streamlined application.
+          Manage items, judges, participants, scores and results in
+          one streamlined application.
         </p>
 
         <div class="hero-buttons">
@@ -648,7 +703,9 @@
             ↓&nbsp; Download JudgesPro APK
           </a>
 
-          <a class="secondary-button" href="#features">
+          <a
+            class="secondary-button"
+            href="#features">
             Explore Features
           </a>
 
@@ -657,7 +714,7 @@
       </div>
 
 
-      <!-- Download card -->
+      <!-- ================= DOWNLOAD CARD ================= -->
 
       <div class="download-card">
 
@@ -665,7 +722,9 @@
           ↓
         </div>
 
-        <h2>Get JudgesPro</h2>
+        <h2>
+          Get JudgesPro
+        </h2>
 
         <p>
           Latest stable Android release
@@ -690,6 +749,29 @@
           Download APK
         </a>
 
+
+        <!-- LIVE DOWNLOAD COUNTER -->
+
+        <div class="download-count">
+
+          <span
+            id="downloadCount"
+            class="download-count-number">
+            —
+          </span>
+
+          <span class="download-count-label">
+            APK Downloads
+          </span>
+
+          <span
+            id="downloadCountStatus"
+            class="download-count-status">
+            Loading latest download count…
+          </span>
+
+        </div>
+
       </div>
 
     </div>
@@ -702,13 +784,17 @@
   <main>
 
 
-    <!-- Features -->
+    <!-- FEATURES -->
 
-    <section class="section" id="features">
+    <section
+      class="section"
+      id="features">
 
       <div class="section-heading">
 
-        <h2>Built for Event Evaluation</h2>
+        <h2>
+          Built for Event Evaluation
+        </h2>
 
         <p>
           JudgesPro brings essential judging and result-management
@@ -721,57 +807,110 @@
       <div class="features">
 
         <div class="feature">
-          <div class="feature-icon">✓</div>
-          <h3>Admin Management</h3>
+
+          <div class="feature-icon">
+            ✓
+          </div>
+
+          <h3>
+            Admin Management
+          </h3>
+
           <p>
             Configure items, participants, scoring criteria and judge
             settings from the Admin workflow.
           </p>
+
         </div>
 
+
         <div class="feature">
-          <div class="feature-icon">J</div>
-          <h3>Judge Workflow</h3>
+
+          <div class="feature-icon">
+            J
+          </div>
+
+          <h3>
+            Judge Workflow
+          </h3>
+
           <p>
             Judges can import settings, update their profile and enter
             judgements for assigned items.
           </p>
+
         </div>
 
+
         <div class="feature">
-          <div class="feature-icon">★</div>
-          <h3>Digital Scoring</h3>
+
+          <div class="feature-icon">
+            ★
+          </div>
+
+          <h3>
+            Digital Scoring
+          </h3>
+
           <p>
             Enter scores digitally and maintain saved judgement records
             for the evaluation process.
           </p>
+
         </div>
 
+
         <div class="feature">
-          <div class="feature-icon">Σ</div>
-          <h3>Result Tabulation</h3>
+
+          <div class="feature-icon">
+            Σ
+          </div>
+
+          <h3>
+            Result Tabulation
+          </h3>
+
           <p>
             Import judges' results or use the Admin manual-entry workflow
             to prepare final results.
           </p>
+
         </div>
 
+
         <div class="feature">
-          <div class="feature-icon">▣</div>
-          <h3>Photo &amp; Video</h3>
+
+          <div class="feature-icon">
+            ▣
+          </div>
+
+          <h3>
+            Photo &amp; Video
+          </h3>
+
           <p>
             Use supported media as visual references for judging and
             documentation where event rules permit.
           </p>
+
         </div>
 
+
         <div class="feature">
-          <div class="feature-icon">PDF</div>
-          <h3>Export &amp; Print</h3>
+
+          <div class="feature-icon">
+            PDF
+          </div>
+
+          <h3>
+            Export &amp; Print
+          </h3>
+
           <p>
             Export judgement data and generate printable PDF score sheets
             and result information.
           </p>
+
         </div>
 
       </div>
@@ -779,13 +918,17 @@
     </section>
 
 
-    <!-- Installation -->
+    <!-- INSTALLATION -->
 
-    <section class="section" id="install">
+    <section
+      class="section"
+      id="install">
 
       <div class="section-heading">
 
-        <h2>How to Install</h2>
+        <h2>
+          How to Install
+        </h2>
 
         <p>
           JudgesPro is distributed as an Android APK through GitHub
@@ -799,17 +942,37 @@
 
         <div class="info-card">
 
-          <h3>📥 Install the App</h3>
+          <h3>
+            📥 Install the App
+          </h3>
 
           <ol class="steps">
-            <li>Tap the <strong>Download JudgesPro APK</strong> button.</li>
-            <li>Open the downloaded APK on your Android device.</li>
+
+            <li>
+              Tap the
+              <strong>
+                Download JudgesPro APK
+              </strong>
+              button.
+            </li>
+
+            <li>
+              Open the downloaded APK on your Android device.
+            </li>
+
             <li>
               If Android asks for permission to install an app from this
               source, allow the permission for your browser or file manager.
             </li>
-            <li>Install JudgesPro.</li>
-            <li>Open the application.</li>
+
+            <li>
+              Install JudgesPro.
+            </li>
+
+            <li>
+              Open the application.
+            </li>
+
           </ol>
 
         </div>
@@ -817,7 +980,9 @@
 
         <div class="info-card">
 
-          <h3>🔄 Updating JudgesPro</h3>
+          <h3>
+            🔄 Updating JudgesPro
+          </h3>
 
           <p>
             When a new version is released, return to this page and
@@ -841,13 +1006,15 @@
     </section>
 
 
-    <!-- Login -->
+    <!-- LOGIN -->
 
     <section class="section">
 
       <div class="section-heading">
 
-        <h2>Login Information</h2>
+        <h2>
+          Login Information
+        </h2>
 
         <p>
           JudgesPro provides separate Admin and Judge access.
@@ -860,7 +1027,9 @@
 
         <div class="info-card">
 
-          <h3>Admin</h3>
+          <h3>
+            Admin
+          </h3>
 
           <p>
             <strong>Admin PIN:</strong> 999
@@ -876,14 +1045,18 @@
 
         <div class="info-card">
 
-          <h3>Judges</h3>
+          <h3>
+            Judges
+          </h3>
 
           <p>
             Judge IDs are assigned by the Admin.
           </p>
 
           <p>
-            Examples: <strong>J001</strong>, <strong>J050</strong>,
+            Examples:
+            <strong>J001</strong>,
+            <strong>J050</strong>,
             <strong>J999</strong>
           </p>
 
@@ -898,17 +1071,21 @@
     </section>
 
 
-    <!-- Trust -->
+    <!-- TRUST -->
 
     <section class="section">
 
       <div class="trust-box">
 
-        <div class="trust-icon">✓</div>
+        <div class="trust-icon">
+          ✓
+        </div>
 
         <div>
 
-          <h3>Official JudgesPro Download</h3>
+          <h3>
+            Official JudgesPro Download
+          </h3>
 
           <p>
             This page provides the JudgesPro Android application through
@@ -925,13 +1102,15 @@
     </section>
 
 
-    <!-- Files -->
+    <!-- FILES -->
 
     <section class="section">
 
       <div class="section-heading">
 
-        <h2>JudgesPro Data</h2>
+        <h2>
+          JudgesPro Data
+        </h2>
 
         <p>
           Application files and media are stored in the JudgesPro folder
@@ -943,7 +1122,9 @@
 
       <div class="info-card">
 
-        <h3>📁 Storage Locations</h3>
+        <h3>
+          📁 Storage Locations
+        </h3>
 
         <span class="path">
           Download/JudgesPro/
@@ -962,13 +1143,17 @@
     </section>
 
 
-    <!-- Support -->
+    <!-- SUPPORT -->
 
-    <section class="section" id="support">
+    <section
+      class="section"
+      id="support">
 
       <div class="support">
 
-        <h2>Need Help?</h2>
+        <h2>
+          Need Help?
+        </h2>
 
         <p>
           For JudgesPro support, suggestions or user assistance,
@@ -1014,64 +1199,76 @@
   </footer>
 
 
-  <!-- ================= VERSION DATA ================= -->
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script>
 
     /*
-      The page reads version information from version.json.
-
-      Example version.json:
-
-      {
-        "version": "1.0.0",
-        "versionCode": 1,
-        "releaseDate": "2026-09-20",
-        "downloadUrl":
-          "https://github.com/surendranaduthila-lab/JudgesPro-Download/releases/latest/download/JudgesPro.apk",
-        "message": "Latest stable version of JudgesPro."
-      }
-    */
+     * ============================================================
+     * JudgesPro Version Information
+     * ============================================================
+     */
 
     fetch("version.json")
+
       .then(function(response) {
+
         if (!response.ok) {
-          throw new Error("Version information unavailable");
+          throw new Error(
+            "Version information unavailable"
+          );
         }
 
         return response.json();
+
       })
 
       .then(function(data) {
 
         if (data.version) {
-          document.getElementById("versionText").textContent =
+
+          document.getElementById(
+            "versionText"
+          ).textContent =
             "JudgesPro v" + data.version;
+
         }
+
 
         if (data.releaseDate) {
 
-          var date = new Date(data.releaseDate + "T00:00:00");
+          var date =
+            new Date(
+              data.releaseDate + "T00:00:00"
+            );
 
           if (!isNaN(date.getTime())) {
 
-            var formattedDate = date.toLocaleDateString(
-              "en-IN",
-              {
-                day: "numeric",
-                month: "long",
-                year: "numeric"
-              }
-            );
+            var formattedDate =
+              date.toLocaleDateString(
+                "en-IN",
+                {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric"
+                }
+              );
 
-            document.getElementById("releaseText").textContent =
+            document.getElementById(
+              "releaseText"
+            ).textContent =
               "Release date: " + formattedDate;
+
           }
+
         }
+
 
         if (data.downloadUrl) {
 
-          document.getElementById("downloadLink").href =
+          document.getElementById(
+            "downloadLink"
+          ).href =
             data.downloadUrl;
 
         }
@@ -1080,12 +1277,140 @@
 
       .catch(function() {
 
-        /*
-          If version.json cannot be loaded, the page continues to work
-          using the built-in latest-release download URL.
-        */
+        console.log(
+          "Using default JudgesPro release information."
+        );
 
-        console.log("Using default JudgesPro release information.");
+      });
+
+
+    /*
+     * ============================================================
+     * LIVE GITHUB APK DOWNLOAD COUNTER
+     * ============================================================
+     *
+     * This reads the download_count of JudgesPro.apk from the
+     * latest public GitHub Release.
+     *
+     * Repository:
+     * surendranaduthila-lab/JudgesPro-Download
+     * ============================================================
+     */
+
+    var githubApi =
+      "https://api.github.com/repos/" +
+      "surendranaduthila-lab/" +
+      "JudgesPro-Download/releases/latest";
+
+
+    fetch(githubApi, {
+      cache: "no-store"
+    })
+
+      .then(function(response) {
+
+        if (!response.ok) {
+          throw new Error(
+            "GitHub download information unavailable"
+          );
+        }
+
+        return response.json();
+
+      })
+
+      .then(function(release) {
+
+        var assets =
+          release.assets || [];
+
+        var apkAsset = null;
+
+
+        /*
+         * Find the exact JudgesPro.apk release asset.
+         */
+
+        for (
+          var i = 0;
+          i < assets.length;
+          i++
+        ) {
+
+          if (
+            assets[i].name ===
+            "JudgesPro.apk"
+          ) {
+
+            apkAsset = assets[i];
+
+            break;
+
+          }
+
+        }
+
+
+        if (apkAsset) {
+
+          var count =
+            Number(
+              apkAsset.download_count
+            );
+
+
+          document.getElementById(
+            "downloadCount"
+          ).textContent =
+            isNaN(count)
+              ? "0"
+              : count.toLocaleString("en-IN");
+
+
+          document.getElementById(
+            "downloadCountStatus"
+          ).textContent =
+            "Downloads of the latest APK";
+
+        } else {
+
+          document.getElementById(
+            "downloadCount"
+          ).textContent =
+            "0";
+
+          document.getElementById(
+            "downloadCountStatus"
+          ).textContent =
+            "Latest APK release information";
+
+        }
+
+      })
+
+      .catch(function(error) {
+
+        console.log(
+          "Download counter unavailable:",
+          error
+        );
+
+
+        /*
+         * Keep the page usable even if GitHub's API is temporarily
+         * unavailable.
+         */
+
+        document.getElementById(
+          "downloadCount"
+        ).textContent =
+          "—";
+
+
+        document.getElementById(
+          "downloadCountStatus"
+        ).textContent =
+          "Download count temporarily unavailable";
 
       });
 
